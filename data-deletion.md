@@ -4,7 +4,7 @@
 
 ## 1. Visão Geral
 
-Este documento descreve os métodos disponíveis para os utilizadores solicitarem a eliminação dos seus dados pessoais da nossa plataforma de gestão de anúncios ("Plataforma"). A Plataforma está comprometida com o direito dos utilizadores à eliminação dos seus dados, em conformidade com a legislação de proteção de dados aplicável.
+Este documento descreve os métodos disponíveis para os utilizadores solicitarem a eliminação dos seus dados pessoais da nossa plataforma de gestão de anúncios, o **Ads AO** ("Plataforma"). A Plataforma está comprometida com o direito dos utilizadores à eliminação dos seus dados, em conformidade com a legislação de proteção de dados aplicável.
 
 ## 2. Métodos para Solicitar a Exclusão de Dados
 
@@ -50,7 +50,7 @@ Ao processar uma solicitação de exclusão, os seguintes dados serão eliminado
 | **Transações Financeiras** | 10 anos | Obrigações fiscais e contabilísticas angolanas (registo de pagamentos, recargas, taxas cobradas) |
 | **Faturas** | 10 anos | Requisitos legais de facturação (SAFT/AFT, AGT) |
 | **Logs de Auditoria** | Indeterminado (append-only) | Registo imutável de operações financeiras e administrativas para compliance |
-| **Registos de Consentimento** | Indeterminado | Prova de consentimento para tratamento de dados, exigido pela legislação de proteção de dados |
+| **Registos de Consentimento** | Indeterminado | Prova de consentimento para tratamento de dados, exigido pela legislação de proteção de dados (`consent_logs`) |
 
 ### 3.3 Dados retidos de forma anonimizada
 
@@ -65,8 +65,8 @@ Ao processar uma solicitação de exclusão, os seguintes dados serão eliminado
 |---|---|---|
 | 1. Confirmação do pedido | Imediato | E-mail automático com número de rastreio |
 | 2. Desativação da conta | Até 24 horas | Conta desativada — sem acesso à Plataforma. Campanhas ativas são pausadas e o saldo em hold libertado. |
-| 3. Eliminação de dados pessoais | Até 14 dias | Dados de perfil, KYC, campanhas e criativos são permanentemente eliminados. |
-| 4. Eliminação de dados de autenticação | Até 14 dias | Dados recebidos via Google OAuth são removidos. |
+| 3. Eliminação de dados pessoais | Até 14 dias | Dados de perfil, KYC, campanhas e criativos são permanentemente eliminados de servidores e buckets. |
+| 4. Eliminação de dados de autenticação | Até 14 dias | Dados recebidos via Google OAuth e Facebook OAuth são removidos. |
 | 5. Confirmação final | Até 30 dias | E-mail de confirmação de que a eliminação foi concluída (com exceção dos dados retidos por obrigação legal). |
 
 ## 5. Efeitos da Exclusão de Dados
@@ -75,19 +75,18 @@ Após a eliminação dos dados:
 
 - O utilizador deixa de ter acesso à Plataforma.
 - Todas as campanhas ativas são **pausadas** e o saldo em hold é **libertado** para o saldo disponível.
-- O utilizador pode solicitar o reembolso do saldo disponível restante contactando o suporte em **suporte@ads.ao**, no prazo de 30 dias após o pedido de exclusão.
+- O utilizador pode solicitar o reembolso do saldo disponível restante em Kwanzas contactando o suporte em **suporte@ads.ao**, no prazo de 30 dias após o pedido de exclusão.
 - Os dados previamente partilhados com a Meta (Facebook/Instagram) através da Plataforma estão sujeitos à política de retenção de dados da Meta. A Plataforma não controla os dados armazenados nos servidores da Meta. Para eliminar dados armazenados pela Meta, o utilizador deve consultar a Política de Privacidade do Facebook e as definições de privacidade da sua conta Facebook.
 - Não é possível recuperar a conta ou os dados após a conclusão do processo de eliminação.
 
 ## 6. Exclusão de Dados Específicos do Facebook
 
-Se o utilizador conectou a sua conta do Facebook à Plataforma, os seguintes dados recebidos do Facebook serão eliminados como parte do processo descrito na Secção 3:
+Se o utilizador conectou a sua conta do Facebook à Plataforma para fins de conexão híbrida de Páginas, os seguintes dados recebidos do Facebook serão eliminados como parte do processo descrito na Secção 3:
 
 - Identificador da conta Facebook
 - Nome e e-mail associados à conta Facebook
-- Lista de Páginas geridas
-- Lista de Contas de Anúncio associadas
-- Tokens de acesso Facebook
+- Lista de Páginas selecionadas
+- Tokens de acesso Facebook (para leitura de Páginas)
 
 O utilizador pode também revogar o acesso da Plataforma à sua conta Facebook a qualquer momento através das definições do Facebook:
 
