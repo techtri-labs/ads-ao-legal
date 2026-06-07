@@ -4,18 +4,20 @@
 
 ## 1. Introdução
 
-A presente Política de Privacidade descreve como recolhemos, utilizamos, armazenamos e protegemos os dados pessoais dos utilizadores da nossa plataforma de gestão de anúncios ("Plataforma"). Ao utilizar a Plataforma, o utilizador aceita os termos descritos neste documento.
+A presente Política de Privacidade descreve como recolhemos, utilizamos, armazenamos e protegemos os dados pessoais dos utilizadores do **Ads AO** ("Plataforma"). Ao utilizar a Plataforma, o utilizador aceita os termos descritos neste documento.
 
 Esta política está em conformidade com a legislação angolana aplicável, incluindo a Lei de Proteção de Dados Pessoais.
+
+A Plataforma é de propriedade e operada pela **Techtri Labs**.
 
 ## 2. Dados que Recolhemos
 
 ### 2.1 Dados fornecidos diretamente pelo utilizador
 
 - **Dados de Registo:** Nome completo, endereço de e-mail, número de telefone.
-- **Dados de Autenticação Social:** Quando o utilizador opta por iniciar sessão com o Google, recolhemos o nome e e-mail associados à conta Google. Quando o utilizador conecta a sua conta do Facebook, recolhemos o nome, e-mail e identificador da conta Facebook, bem como as Páginas e Contas de Anúncio associadas.
+- **Dados de Autenticação Social:** Quando o utilizador opta por iniciar sessão com o Google, recolhemos o nome e e-mail associados à conta Google. Quando o utilizador conecta a sua conta do Facebook via Facebook OAuth, recolhemos o nome, e-mail e identificador da conta Facebook, bem como a lista de Páginas gerizadas.
 - **Dados de Perfil e KYC:** Para planos pagos, recolhemos o NIF (Número de Identificação Fiscal), morada e, quando aplicável, documentos de identificação para verificação KYC (Know Your Customer).
-- **Dados de Pagamento:** Histórico de transações, montantes em Kwanzas, referências de pagamento geradas pela provedora de pagamentos.
+- **Dados de Pagamento:** Histórico de transações, montantes em Kwanzas, referências de pagamento geradas pela **Provedora de Pagamentos**.
 - **Dados de Campanhas:** Conteúdo dos anúncios (imagens, vídeos, textos, headlines, CTAs), URLs de destino, números de WhatsApp, definições de público-alvo (localização, idade, género, interesses).
 - **Comunicações:** Mensagens enviadas para o suporte ou através dos canais de contacto da Plataforma.
 
@@ -41,7 +43,7 @@ Utilizamos os dados recolhidos para as seguintes finalidades:
 | Processar pagamentos e gerir saldo | Execução do contrato |
 | Criar, publicar e gerir anúncios no Facebook e Instagram via Meta API | Execução do contrato |
 | Sincronizar métricas de desempenho de anúncios | Execução do contrato |
-| Enviar notificações sobre o estado de campanhas, pagamentos e alertas (e-mail, in-app, WhatsApp) | Execução do contrato / Interesse legítimo |
+| Enviar notificações sobre o estado de campanhas, pagamentos e alertas (e-mail, in-app) | Execução do contrato / Interesse legítimo |
 | Verificar identidade para cumprimento KYC (planos pagos) | Obrigação legal |
 | Emitir faturas e cumprir obrigações fiscais (SAFT/AFT) | Obrigação legal |
 | Prevenir fraudes, abusos e dupla cobrança (idempotência) | Interesse legítimo |
@@ -58,8 +60,8 @@ Utilizamos os dados recolhidos para as seguintes finalidades:
 | **Vercel** | Hospedagem e CDN | Dados de sessão e utilização | Cloud (EUA) |
 | **Inngest** | Orquestração de tarefas em segundo plano | Dados de campanhas e transações para processamento assíncrono | Cloud (EUA) |
 | **Sentry** | Monitorização de erros | Dados de navegação em caso de erro | Cloud (EUA) |
-| **Provedora de Pagamento** | Gateway de pagamento | Referências de pagamento, montantes em Kz | Angola |
-| **Resend / Serviço de E-mail** | Envio de e-mails transacionais | Nome, e-mail, conteúdo da notificação | Cloud |
+| **Provedora de Pagamentos** | Gateway de pagamento | Referências de pagamento, montantes em Kz | Angola |
+| **Resend** | Envio de e-mails transacionais e notificações | Nome, e-mail, conteúdo da notificação | Cloud (EUA/UE) |
 
 ### 4.2 Plataformas de Anúncios (Meta)
 
@@ -75,9 +77,9 @@ Podemos divulgar dados pessoais quando exigido por lei, ordem judicial ou autori
 - **Dados de transações financeiras:** Conservados por um período mínimo de 10 anos, conforme requisitos legais e fiscais angolanos.
 - **Dados de campanhas e métricas:** Conservados durante a vigência da conta, e por até 12 meses após o encerramento da conta.
 - **Logs de auditoria:** Conservados por tempo indeterminado (append-only, imutáveis).
-- **Dados de KYC:** Conservados durante a vigência da conta e por até 5 anos após o encerramento, conforme requisitos legais.
+- **Dados de KYC e consentimento:** Conservados durante a vigência da conta e por até 5 anos após o encerramento, conforme requisitos legais.
 
-Após o término dos períodos de retenção, os dados são permanentemente eliminados ou anonimizados.
+Após o término dos períodos de retenção, os dados são permanentemente eliminados ou anonimizados através de processos automatizados.
 
 ## 6. Segurança dos Dados
 
@@ -85,12 +87,12 @@ Implementamos medidas técnicas e organizacionais para proteger os dados pessoai
 
 - **Encriptação em Trânsito:** Todas as comunicações utilizam HTTPS/TLS (Vercel e Supabase).
 - **Encriptação em Repouso:** Dados sensíveis (NIF, telefone, documentos KYC) são encriptados com `pgsodium` (encriptação ao nível da coluna na base de dados).
-- **Chaves de API:** Armazenadas exclusivamente no Supabase Vault, nunca em código-fonte ou variáveis de ambiente.
+- **Chaves de API:** Armazenadas exclusivamente no Supabase Vault, nunca em código-fonte ou variáveis de ambiente expostas no browser.
 - **Row Level Security (RLS):** Isolamento de dados multi-tenant — cada utilizador apenas acede aos seus próprios dados.
 - **Auditoria Imutável:** Todas as operações financeiras são registadas num log append-only.
 - **Autenticação de Dois Fatores (2FA):** Obrigatória para contas de administrador.
 - **Rate Limiting:** Proteção contra acessos abusivos nos endpoints críticos.
-- **Verificação HMAC:** Validação de assinatura nos webhooks de pagamento da Provedora de Pagamentos.
+- **Verificação HMAC:** Validação de assinatura nos webhooks de pagamento da **Provedora de Pagamentos**.
 
 ## 7. Direitos do Titular dos Dados
 
@@ -98,23 +100,22 @@ O utilizador tem os seguintes direitos relativamente aos seus dados pessoais:
 
 - **Direito de Acesso:** Solicitar uma cópia dos dados pessoais que mantemos.
 - **Direito de Retificação:** Corrigir dados pessoais incompletos ou incorretos.
-- **Direito de Eliminação:** Solicitar a eliminação dos dados pessoais (ver Secção 8 — Instruções de Exclusão de Dados).
+- **Direito de Eliminação:** Solicitar a eliminação dos dados pessoais (ver Secção 9 — Instruções de Exclusão de Dados).
 - **Direito à Limitação do Tratamento:** Solicitar a restrição do tratamento dos dados em determinadas circunstâncias.
 - **Direito de Portabilidade:** Receber os dados pessoais num formato estruturado e de uso corrente.
 - **Direito de Oposição:** Opor-se ao tratamento de dados baseado em interesses legítimos.
 
-Para exercer qualquer um destes direitos, o utilizador deve contactar-nos através do e-mail indicado na Secção 10.
+Para exercer qualquer um destes direitos, o utilizador deve contactar-nos através do e-mail indicado na Secção 12.
 
 Responderemos a todas as solicitações no prazo máximo de 30 dias, em conformidade com a legislação aplicável.
 
 ## 8. Utilização de Dados do Facebook
 
-Quando o utilizador conecta a sua conta do Facebook ou autoriza a Plataforma a gerir anúncios em seu nome, a Plataforma recebe e processa dados da conta Facebook do utilizador, incluindo:
+Quando o utilizador conecta a sua conta do Facebook ou autoriza a Plataforma a gerir anúncios em seu nome através do modelo híbrido de agência, a Plataforma recebe e processa dados da conta Facebook do utilizador, incluindo:
 
 - Identificador da conta Facebook
 - Nome e e-mail associados à conta
-- Páginas do Facebook geridas pelo utilizador
-- Contas de Anúncio associadas
+- Páginas do Facebook geridas pelo utilizador (para servir de destino das campanhas)
 - Métricas de desempenho de anúncios
 
 Estes dados são utilizados exclusivamente para as finalidades descritas na Secção 3 e não são partilhados com terceiros não indicados nesta Política.
@@ -149,4 +150,4 @@ Para questões relacionadas com esta Política de Privacidade, exercício de dir
 
 ---
 
-&copy; 2026 Tectri Labs. Todos os direitos reservados.
+&copy; 2026 Techtri Labs. Todos os direitos reservados.
