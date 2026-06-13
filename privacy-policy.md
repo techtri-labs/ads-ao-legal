@@ -14,8 +14,8 @@ A Plataforma é de propriedade e operada pela **Techtri Labs**.
 
 ### 2.1 Dados fornecidos diretamente pelo utilizador
 
-- **Dados de Registo:** Nome completo, endereço de e-mail, número de telefone.
-- **Dados de Autenticação Social:** Quando o utilizador opta por iniciar sessão com o Google, recolhemos o nome e e-mail associados à conta Google. Quando o utilizador conecta a sua conta do Facebook via Facebook OAuth, recolhemos o nome, e-mail e identificador da conta Facebook, bem como a lista de Páginas gerizadas.
+- **Dados de Registo:** Nome completo, endereço de email, número de telefone.
+- **Dados de Autenticação Social:** Quando o utilizador opta por iniciar sessão com o Google, recolhemos o nome e email associados à conta Google. Quando o utilizador conecta a sua conta do Facebook via Facebook OAuth, recolhemos o nome, email e identificador da conta Facebook, bem como a lista de Páginas geridas.
 - **Dados de Perfil e KYC:** Para planos pagos, recolhemos o NIF (Número de Identificação Fiscal), morada e, quando aplicável, documentos de identificação para verificação KYC (Know Your Customer).
 - **Dados de Pagamento:** Histórico de transações, montantes em Kwanzas, referências de pagamento geradas pela **Provedora de Pagamentos**.
 - **Dados de Campanhas:** Conteúdo dos anúncios (imagens, vídeos, textos, headlines, CTAs), URLs de destino, números de WhatsApp, definições de público-alvo (localização, idade, género, interesses).
@@ -30,7 +30,7 @@ A Plataforma é de propriedade e operada pela **Techtri Labs**.
 ### 2.3 Dados recebidos de terceiros
 
 - **Meta (Facebook/Instagram):** Quando o utilizador conecta uma conta do Facebook ou uma Página, a Plataforma recebe dados autorizados via Facebook Login e Meta API, incluindo identificadores de conta, nome da Página, e permissões concedidas (`ads_management`, `ads_read`, `business_management`).
-- **Google:** Nome e e-mail associados à conta Google quando o utilizador utiliza o Google OAuth para autenticação.
+- **Google:** Nome e email associados à conta Google quando o utilizador utiliza o Google OAuth para autenticação.
 - **Provedora de Pagamentos:** Confirmação de pagamentos via webhook e polling, incluindo o estado da transação e o montante pago.
 
 ## 3. Finalidade do Tratamento de Dados
@@ -43,7 +43,7 @@ Utilizamos os dados recolhidos para as seguintes finalidades:
 | Processar pagamentos e gerir saldo | Execução do contrato |
 | Criar, publicar e gerir anúncios no Facebook e Instagram via Meta API | Execução do contrato |
 | Sincronizar métricas de desempenho de anúncios | Execução do contrato |
-| Enviar notificações sobre o estado de campanhas, pagamentos e alertas (e-mail, in-app) | Execução do contrato / Interesse legítimo |
+| Enviar notificações sobre o estado de campanhas, pagamentos e alertas (email, in-app) | Execução do contrato / Interesse legítimo |
 | Verificar identidade para cumprimento KYC (planos pagos) | Obrigação legal |
 | Emitir faturas e cumprir obrigações fiscais (SAFT/AFT) | Obrigação legal |
 | Prevenir fraudes, abusos e dupla cobrança (idempotência) | Interesse legítimo |
@@ -61,7 +61,7 @@ Utilizamos os dados recolhidos para as seguintes finalidades:
 | **Inngest** | Orquestração de tarefas em segundo plano | Dados de campanhas e transações para processamento assíncrono | Cloud (EUA) |
 | **Sentry** | Monitorização de erros | Dados de navegação em caso de erro | Cloud (EUA) |
 | **Provedora de Pagamentos** | Gateway de pagamento | Referências de pagamento, montantes em Kz | Angola |
-| **Resend** | Envio de e-mails transacionais e notificações | Nome, e-mail, conteúdo da notificação | Cloud (EUA/UE) |
+| **Resend** | Envio de emails transacionais e notificações | Nome, email, conteúdo da notificação | Cloud (EUA/UE) |
 
 ### 4.2 Plataformas de Anúncios (Meta)
 
@@ -105,7 +105,7 @@ O utilizador tem os seguintes direitos relativamente aos seus dados pessoais:
 - **Direito de Portabilidade:** Receber os dados pessoais num formato estruturado e de uso corrente.
 - **Direito de Oposição:** Opor-se ao tratamento de dados baseado em interesses legítimos.
 
-Para exercer qualquer um destes direitos, o utilizador deve contactar-nos através do e-mail indicado na Secção 12.
+Para exercer qualquer um destes direitos, o utilizador deve contactar-nos através do email indicado na Secção 12.
 
 Responderemos a todas as solicitações no prazo máximo de 30 dias, em conformidade com a legislação aplicável.
 
@@ -114,7 +114,7 @@ Responderemos a todas as solicitações no prazo máximo de 30 dias, em conformi
 Quando o utilizador conecta a sua conta do Facebook ou autoriza a Plataforma a gerir anúncios em seu nome através do modelo híbrido de agência, a Plataforma recebe e processa dados da conta Facebook do utilizador, incluindo:
 
 - Identificador da conta Facebook
-- Nome e e-mail associados à conta
+- Nome e email associados à conta
 - Páginas do Facebook geridas pelo utilizador (para servir de destino das campanhas)
 - Métricas de desempenho de anúncios
 
@@ -135,7 +135,7 @@ A Plataforma utiliza fornecedores de infraestrutura cloud que podem processar da
 ## 11. Alterações a esta Política
 
 Reservamo-nos o direito de atualizar esta Política de Privacidade periodicamente. As alterações serão comunicadas aos utilizadores através de:
-- Notificação por e-mail com 15 dias de antecedência
+- Notificação por email com 15 dias de antecedência
 - Aviso in-app na Plataforma
 - Atualização da data de "Última atualização" no topo deste documento
 
@@ -145,7 +145,7 @@ A utilização continuada da Plataforma após a entrada em vigor das alteraçõe
 
 Para questões relacionadas com esta Política de Privacidade, exercício de direitos sobre os dados, ou comunicações com o Encarregado de Proteção de Dados:
 
-- **E-mail:** suporte@ads.ao
+- **Email:** suporte@ads.ao
 - **Telefone:** +244 935 087 761 
 
 ---
