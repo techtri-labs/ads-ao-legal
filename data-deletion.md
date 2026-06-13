@@ -15,16 +15,16 @@ O utilizador pode solicitar a eliminação dos seus dados através de qualquer u
 1. Iniciar sessão na sua conta na Plataforma.
 2. Navegar para **Definições** > **Privacidade**.
 3. Clicar em **"Eliminar a minha conta e dados"**.
-4. Confirmar a operação introduzindo a sua palavra-passe.
+4. Confirmar a operação introduzindo a sua senha.
 5. Submeter o pedido.
 
-Após a submissão, o utilizador receberá uma confirmação por e-mail com um número de rastreio do pedido. A eliminação será processada no prazo de 30 dias.
+Após a submissão, o utilizador receberá uma confirmação por email com um número de rastreio do pedido. A eliminação é processada da seguinte forma: conta desativada em até 24h, dados pessoais purgados em até 14 dias, e confirmação final enviada em até 30 dias.
 
-### Opção 2: Por E-mail
+### Opção 2: Por Email
 
-Enviar um e-mail para **suporte@ads.ao** com o assunto **"Solicitação de Exclusão de Dados"**, incluindo:
+Enviar um email para **suporte@ads.ao** com o assunto **"Solicitação de Exclusão de Dados"**, incluindo:
 - Nome completo associado à conta
-- Endereço de e-mail registado na Plataforma
+- Endereço de email registado na Plataforma
 - Motivo da solicitação (opcional)
 
 
@@ -36,8 +36,8 @@ Ao processar uma solicitação de exclusão, os seguintes dados serão eliminado
 
 | Categoria de Dados | Descrição |
 |---|---|
-| **Dados de Perfil** | Nome, e-mail, telefone, imagem de perfil |
-| **Dados de Autenticação** | Hash da palavra-passe, tokens OAuth (Google e Facebook) |
+| **Dados de Perfil** | Nome, email, telefone, imagem de perfil |
+| **Dados de Autenticação** | Hash da senha, tokens OAuth (Google e Facebook) |
 | **Dados KYC** | NIF, documentos de identificação, comprovativos de morada |
 | **Dados de Campanhas** | Criativos de anúncios (imagens e vídeos enviados), textos, headlines, CTAs |
 | **Dados de Públicos-alvo** | Definições de segmentação configuradas pelo utilizador |
@@ -63,11 +63,11 @@ Ao processar uma solicitação de exclusão, os seguintes dados serão eliminado
 
 | Etapa | Prazo | Descrição |
 |---|---|---|
-| 1. Confirmação do pedido | Imediato | E-mail automático com número de rastreio |
+| 1. Confirmação do pedido | Imediato | Email automático com número de rastreio |
 | 2. Desativação da conta | Até 24 horas | Conta desativada — sem acesso à Plataforma. Campanhas ativas são pausadas e o saldo em hold libertado. |
 | 3. Eliminação de dados pessoais | Até 14 dias | Dados de perfil, KYC, campanhas e criativos são permanentemente eliminados de servidores e buckets. |
 | 4. Eliminação de dados de autenticação | Até 14 dias | Dados recebidos via Google OAuth e Facebook OAuth são removidos. |
-| 5. Confirmação final | Até 30 dias | E-mail de confirmação de que a eliminação foi concluída (com exceção dos dados retidos por obrigação legal). |
+| 5. Confirmação final | Até 30 dias | Email de confirmação de que a eliminação foi concluída (com exceção dos dados retidos por obrigação legal). |
 
 ## 5. Efeitos da Exclusão de Dados
 
@@ -84,7 +84,7 @@ Após a eliminação dos dados:
 Se o utilizador conectou a sua conta do Facebook à Plataforma para fins de conexão híbrida de Páginas, os seguintes dados recebidos do Facebook serão eliminados como parte do processo descrito na Secção 3:
 
 - Identificador da conta Facebook
-- Nome e e-mail associados à conta Facebook
+- Nome e email associados à conta Facebook
 - Lista de Páginas selecionadas
 - Tokens de acesso Facebook (para leitura de Páginas)
 
@@ -98,7 +98,7 @@ O utilizador pode também revogar o acesso da Plataforma à sua conta Facebook a
 
 O utilizador pode cancelar o pedido de exclusão no prazo de **7 dias** após a submissão, caso mude de ideia:
 
-1. Responder ao e-mail de confirmação do pedido com a mensagem "Cancelar exclusão".
+1. Responder ao email de confirmação do pedido com a mensagem "Cancelar exclusão".
 2. Ou contactar **suporte@ads.ao** com o número de rastreio do pedido.
 
 Após esse período, o processo de eliminação é irreversível e não pode ser cancelado.
@@ -107,7 +107,7 @@ Após esse período, o processo de eliminação é irreversível e não pode ser
 
 Para questões relacionadas com a exclusão de dados, acompanhamento de um pedido em curso, ou qualquer esclarecimento adicional:
 
-- **E-mail:** suporte@ads.ao
+- **Email:** suporte@ads.ao
 - **Telefone:** +244 935 087 761 
 
 ---
